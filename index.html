@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <form onsubmit="add(event)">
+      <input type="text" placeholder="Name" id="name" />
+      <button>Add</button>
+      <button onclick="sortA_Z()">A-Z</button>
+      <button onclick="sortZ_A()">Z-A</button>
+      <input type="text" placeholder="Search Name" id="search" />
+      <button onclick="searchLetters()">Search</button>
+    </form>
+
+    <div>
+      <div id="res"></div>
+      <div id="res1"></div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
